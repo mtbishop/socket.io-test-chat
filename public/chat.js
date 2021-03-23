@@ -22,3 +22,5 @@ socket.on('chat', function(data) {
     output.innerHTML += '<p><strong>' + data.handle + ': </strong>' + data.message + '</p>';
     console.log('message sent!')
 })
+
+//test comment
