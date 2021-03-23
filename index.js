@@ -9,7 +9,8 @@ var server = app.listen(PORT, function () {
   console.log(`listening to requests on http://localhost:${PORT}`);
 });
 
-// Static files
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 app.use(express.static('public'));
 
 // Socket setup
